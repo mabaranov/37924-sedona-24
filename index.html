@@ -6,32 +6,24 @@
 </head>
 <body>
 
-  <header class="page-header">
+  <header class="main-header">
 
     <div class="logo">
       <img src="img/logo-sedona.svg" alt="Логотип Седона">
     </div>
 
-    <nav>
+    <nav class="main-navigation">
       <ul>
-        <li>
-          <a href="">Информация</a>
-        </li>
-        <li>
-          <a href="">Фото и видео</a>
-        </li>
-        <li>
-          <a href="">Карта штата</a>
-        </li>
-        <li>
-          <a href="">Гостиницы</a>
-        </li>
+        <li><a href="">Информация</a></li>
+        <li><a href="">Фото и видео</a></li>
+        <li><a href="">Карта штата</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
 
   </header>
 
-  <main>
+  <main class="container">
 
     <h1 class="visually-hidden">Промо-сайт городка Седона</h1>
 
@@ -107,7 +99,17 @@
         и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
       <a href="#">Поиск гостиницы в Седоне</a>
-      <form></form>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="date-in">Дата заезда:</label>
+        <input id="date-in" type="text" name="date-in" value="" placeholder="24 апреля 2017">
+        <label for="date-out">Дата выезда:</label>
+        <input id="date-out" type="text" name="date-out" value="" placeholder="4 июля 2017">
+        <label for="adults">Взрослые:</label>
+        <input id="adults" type="number" name="adults" min="1">
+        <label for="children">Дети:</label>
+        <input id="children" type="number" name="children" min="0">
+        <button type="submit">Найти</button>
+      </form>
     </section>
 
     <section class="map">
@@ -116,16 +118,18 @@
 
   </main>
 
-  <footer class="page-footer">
+  <footer class="main-footer">
 
     <section class="footer-hashtag">
       <a href="#">#VisitSedona</a>
     </section>
 
     <section class="footer-social">
-      <a href="#">Twitter</a>
-      <a href="#">Facebook</a>
-      <a href="#">YouTube</a>
+      <ul>
+        <li><a class="social-button" href="#">Twitter</a></li>
+        <li><a class="social-button" href="#">Facebook</a></li>
+        <li><a class="social-button" href="#">YouTube</a></li>
+      </ul>
     </section>
 
     <section class="footer-copyright">
