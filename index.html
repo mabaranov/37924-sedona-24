@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normilize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -13,7 +16,7 @@
     </div>
 
     <nav class="main-navigation">
-      <ul>
+      <ul class="site-navigation">
         <li><a href="">Информация</a></li>
         <li><a href="">Фото и видео</a></li>
         <li><a href="">Карта штата</a></li>
@@ -47,22 +50,22 @@
         </div>
       </div>
 
-      <ul class="advantages_list">
-        <li class="advantages_item">
-          <h3 class="advantages_title">Жилье</h3>
-          <p class="advantages_description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      <ul class="advantages-list">
+        <li class="advantages-item">
+          <h3 class="advantages-title">Жилье</h3>
+          <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
-        <li class="advantages_item">
-          <h3 class="advantages_title">Еда</h3>
-          <p class="advantages_description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        <li class="advantages-item">
+          <h3 class="advantages-title">Еда</h3>
+          <p class="advantages-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li class="advantages_item">
-          <h3 class="advantages_title">Сувениры</h3>
-          <p class="advantages_description">Не только китайского, но и местного производства!</p>
+        <li class="advantages-item">
+          <h3 class="advantages-title">Сувениры</h3>
+          <p class="advantages-description">Не только китайского, но и местного производства!</p>
         </li>
       </ul>
 
-     <div class="wrapper-second">
+      <div class="wrapper-second">
         <div class="advantages-title">
           <h3>Там есть мост дьявола</h3>
           <span>&mdash; &#8470;2 &mdash;</span>
@@ -73,21 +76,21 @@
         </div>
       </div>
 
-      <ul class="advantages_list">
-        <li class="advantages_item">
-          <h3 class="advantages_title">Небольшая площадь</h3>
+      <ul class="advantages-list">
+        <li class="advantages-item">
+          <h3 class="advantages-title">Небольшая площадь</h3>
           <span>&mdash; &#8470;3 &mdash;</span>
           <p class="advantages_description">Все достопримечательности находятся очень близко</p>
         </li>
-        <li class="advantages_item">
-          <h3 class="advantages_title">Красивая дорога</h3>
+        <li class="advantages-item">
+          <h3 class="advantages-title">Красивая дорога</h3>
           <span>&mdash; &#8470;4 &mdash;</span>
-          <p class="advantages_description">Ехать в Седону из Лас-Вегаса совсем нескучно!</p>
+          <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем нескучно!</p>
         </li>
-        <li class="advantages_item">
-          <h3 class="advantages_title">Мало туристов</h3>
+        <li class="advantages-item">
+          <h3 class="advantages-title">Мало туристов</h3>
           <span>&mdash; &#8470;5 &mdash;</span>
-          <p class="advantages_description">Большинство едет в гранд каньон и толпится там</p>
+          <p class="advantages-description">Большинство едет в гранд каньон и толпится там</p>
         </li>
       </ul>
 
@@ -99,15 +102,21 @@
         и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
       <a href="#">Поиск гостиницы в Седоне</a>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="date-in">Дата заезда:</label>
-        <input id="date-in" type="text" name="date-in" value="" placeholder="24 апреля 2017">
-        <label for="date-out">Дата выезда:</label>
-        <input id="date-out" type="text" name="date-out" value="" placeholder="4 июля 2017">
-        <label for="adults">Взрослые:</label>
-        <input id="adults" type="number" name="adults" min="1">
-        <label for="children">Дети:</label>
-        <input id="children" type="number" name="children" min="0">
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="search-item">
+          <label for="date-in">Дата заезда:</label>
+          <input id="date-in" type="text" name="date-in" value="24 апреля 2017">
+        </p>
+        <p class="search-item">
+          <label for="date-out">Дата выезда:</label>
+          <input id="date-out" type="text" name="date-out" value="4 июля 2017">
+        </p>
+        <p class="search-item">
+          <label for="adults">Взрослые:</label>
+          <input id="adults" type="number" name="adults" min="1">
+          <label for="children">Дети:</label>
+          <input id="children" type="number" name="children" min="0">
+        </p>
         <button type="submit">Найти</button>
       </form>
     </section>
@@ -134,7 +143,7 @@
 
     <section class="footer-copyright">
       <span>Website by</span>
-      <a href="#">HTML Academy</a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
     </section>
 
   </footer>
