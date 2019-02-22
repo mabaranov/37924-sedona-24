@@ -6,10 +6,41 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-  color: #000000;
   text-transform: uppercase;
 
-  background-color: #ffffff;
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.visually-hidden {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+body > * {
+  border: 3px solid red;
+}
+body > * > * {
+  border: 2px solid green;
+}
+body > * > * > * {
+  border: 1px solid blue;
+}
+
+
+.main-header {
+
+  /* Временно для сетки */
+  min-height: 56px;
 }
 
 a {
@@ -25,7 +56,23 @@ a {
 }
 
 .site-navigation {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+
+  display: flex;
+  /*justify-content: flex-start;*/
+   justify-content: space-between;
+  align-items: center;
+
+  /* Временно для сетки */
+  min-height: 56px;
+}
+
+.site-navigation li {
+  width: 240px;
+  border: 2px solid green;
 }
 
 .site-navigation a {
@@ -44,9 +91,12 @@ a {
   color: #766357;
 }
 
-.advantages-list {
-  list-style: none;
-  text-align: center;
+.logo {
+  width: 140px;
+  height: 72px;
+
+  position: absolute;
+  margin: 0 530px;
 }
 
 .promo {
@@ -58,11 +108,69 @@ a {
   font-size: 21px;
 }
 
+.promo img {
+  width: 459px;
+  height: 353px;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-list {
+
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  text-align: center;
+
+  /* Временно для сетки */
+  min-height: 256px;
+}
+
+.advantages-item {
+  width: 400px;
+
+  border: 1px solid green;
+  background-color: #eeeeee;
+}
+
 .wrapper-first,
 .wrapper-second {
   color: #ffffff;
   background-color: #81b3d2;
   text-align: center;
+
+  display: flex;
+
+  border: 3px dotted red;
+}
+
+.wrapper-second {
+  flex-direction: row-reverse;
+}
+
+.advantages-title {
+  width: 400px;
+}
+
+.advantages-photo-right {
+  width: 800px;
+  height: 256px;
+
+  background: rgb(96, 90, 66) url("../img/town_real.jpg");
+}
+
+.advantages-photo-left {
+  width: 800px;
+  height: 256px;
+
+  background: rgb(96, 90, 66) url("../img/bridge_devil.jpg");
 }
 
 .advantages-title h3 {
@@ -128,6 +236,16 @@ a {
 }
 
 .main-footer {
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 120px;
+
   opacity: 0.9;
 }
 
@@ -234,4 +352,14 @@ a.more {
 .rating p {
   color: #666666;
   background-color: #f2f2f2;
+}
+
+.hotel-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-result {
+  display: flex;
+  justify-content: space-between;
 }
