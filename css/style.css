@@ -155,10 +155,11 @@ a {
 
 .advantages-list2 .advantages-item {
   background-color: #eeeeee;
+  padding-bottom: 50px;
 }
 
 .advantages-list2 .block {
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
 .advantages-item {
@@ -175,6 +176,12 @@ a {
 .block {
   margin: 0 auto;
   width: 295px;
+}
+
+.block span {
+  display: block;    
+  margin-top: 24px;
+  margin-bottom: 20px;
 }
 
 .icon {
@@ -264,11 +271,13 @@ a {
 .search-hotels b {
   font-size: 30px;
   line-height: 36px;
+  display: block;
+  margin-bottom: 26px;
 }
 
 .search-hotels p {
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
 }
 
 .btn-search-hotel {
@@ -313,6 +322,11 @@ a {
   background-color: #ffffff;
 }
 
+
+.footer-hashtag {
+  margin-left: 15px;
+}
+
 .footer-social ul {
   list-style: none;
 }
@@ -320,7 +334,7 @@ a {
 .main-footer {
   position: relative;
   margin: 0;
-  margin-top: -120px;
+  margin-top: -125px;
   padding: 0;
 
   display: flex;
@@ -430,6 +444,7 @@ a {
   display: flex;
   justify-content: center;
   text-align: center;
+  margin-left: 40px;
 }
 
 .social-list a {
