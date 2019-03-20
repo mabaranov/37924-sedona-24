@@ -42,6 +42,7 @@ a {
   margin: 0 auto;
   padding: 0;
   background-color: #ffffff;
+  box-shadow: 0 0 40px 0 #dbdbdb;
 }
 
 .main-navigation {
@@ -62,23 +63,23 @@ a {
   flex-wrap: wrap;
 }
 
-.site-navigation li:nth-child(2) {
-  margin-right: 244px;
+.site-navigation li {
+  width: 239px;
+  height: 56px;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: auto;
 }
 
 .site-navigation a {
   display: block;
   box-sizing: border-box;
-  padding-left: 72px;
   padding-top: 15px;
-  width: 239px;
-  height: 56px;
+  padding-bottom: 15px;
+  text-align: center;
 
   color: #000000;
-
-/*  background: rgba(234, 255, 45, 0.5);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-*/
 }
 
 .site-navigation a:hover {
@@ -104,8 +105,6 @@ a {
 .promo {
   text-align: center;
   line-height: 26px;
-
-  box-shadow: inset 0 0 0 2px rgb(0, 255, 0);
 }
 
 .promo h2 {
@@ -115,14 +114,14 @@ a {
 
 .promo p {
   background-color: #ffffff;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
   padding-top: 12px;
 }
 
 .cover {
     background-color: #81b3d2;
-    background: url(../img/polygon.png) no-repeat bottom,url(../img/background-photo.jpg) no-repeat 50% 22%;
-    padding: 75px 0;
+    background: url(../img/polygon.svg) no-repeat bottom,url(../img/background-photo.jpg) no-repeat 50% 28%;
+    padding: 78px 0;
     margin-bottom: 60px;
 }
 
@@ -167,7 +166,7 @@ a {
   width: 400px;
   height: 275x;
 
-  padding-bottom: 64px;
+  padding-bottom: 70px;
   text-align: center;
 
   background-color: #ffffff;
@@ -183,6 +182,7 @@ a {
   height: 76px;
   margin: 0 auto;
   margin-top: 60px;
+  margin-bottom: 25px;
   background-repeat: no-repeat;
 }
 .icon-1 {
@@ -214,8 +214,12 @@ a {
 .wrapper-first .advantages-title,
 .wrapper-second .advantages-title {
   width: 400px;
-  padding: 25px 30px;
+  padding: 25px 50px;
   box-sizing: border-box;
+}
+
+.wrapper-second .advantages-title {
+  padding:25px 45px;
 }
 
 .advantages-photo-right {
@@ -238,6 +242,7 @@ a {
 
 .advantages-title p {
   font-weight: 400;
+  padding-top: 10px;
 }
 
 .advantages-item h3 {
@@ -540,6 +545,10 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.hotel-info span {
+  color: #333333;
+}
+
 a.btn {
   font-size: 14px;
   line-height: 21px;
@@ -561,25 +570,24 @@ a.more {
   background-color: #81b3d2;
 }
 
-.hotel-info span {
-  color: #333333;
+.rating {
+  margin-left: auto;
+  width: 110px;
 }
 
 .rating p {
   color: #666666;
   background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: center;
 }
-
-.hotel-item {
-  display: flex;
-  justify-content: space-between;
-}
-
 
 .filter-form {
   display: flex;
   width: auto;
-  height: 217px;
+  height: 190px;
   padding-top: 31px;
   padding-left: 72px;
   padding-right: 74px;
@@ -712,6 +720,149 @@ a.more {
 
 .search-result {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  border-bottom: 1px solid #f2f2f2;
 }
 
+.search-title {
+  margin-left: 70px;
+}
+
+.search-sort {
+  margin-left: 50px;
+}
+
+.search-setting {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-setting li {
+  margin-left: 33px;
+}
+
+.result {
+  margin-bottom: 120px;
+}
+
+.hotel-item {
+  display: flex;
+  padding: 30px 70px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.hotel-info {
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+  width: 750px;
+  min-height: 90px;
+}
+
+.hotel-info h2 {
+  margin: 0;
+  padding: 0 0 8px;
+}
+
+.hotel-info span {
+  display: inline-block;
+  font-weight: 400;
+  min-width: 115px;
+  padding-bottom: 12px;
+}
+
+.more, .booking {
+    font-size: 14px;
+    line-height: 21px;
+    width: 110px;
+    height: 27px;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background: #8dbad6;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+a.more {
+  margin-right: 5px;
+}
+
+button.booking {
+    background-color: #766357;
+    width: 142px;
+    font-weight: 700;
+}
+
+
+/*.rating {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating p {
+  display: block;
+  width: 110px;
+  height: 27px;
+  margin-bottom: 13px;
+
+  background: rgb(242, 242, 242);
+  text-align: center;
+}
+.rating span {
+  position: relative;
+  height: 17px;
+  margin-left: 72px;
+
+  font-size: 0;
+  line-height: 0;
+
+  background: url("../img/star.svg") space;
+}
+.rating .star-5 {
+  width: 89px;
+  top: -4px;
+  right: 51px;
+}
+.rating .star-3 {
+  width: 64px;
+  top: -3px;
+  right: 26px;
+}
+.rating .star-2 {
+  width: 40px;
+  background-position: -10%;
+  top: -2px;
+  right: 2px;
+}*/
+.stars {
+  text-align: right;
+  margin-bottom: 40px;
+}
+.star {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-left: 5px;
+    msargin-bottom: 19px;
+    background-image: url('../img/star.svg');
+}
+
+
+/*  background: rgba(234, 255, 45, 0.5);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+
+*/
