@@ -323,35 +323,6 @@ a {
 }
 
 
-.footer-hashtag {
-  margin-left: 15px;
-}
-
-.footer-social ul {
-  list-style: none;
-}
-
-.main-footer {
-  position: relative;
-  margin: 0;
-  margin-top: -125px;
-  padding: 0;
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  min-height: 120px;
-
-  background-color: rgba(255, 255, 255, 0.9);
-  z-index: 10;
-}
-
-/*.footer-hashtag,
-.footer-social,
-.footer-copyright {
-  margin-top: 43px;
-}*/
 .modal-window {
     display: none;
     position: absolute;
@@ -431,6 +402,29 @@ a {
 }
 
 
+.main-footer {
+  position: relative;
+  margin: 0;
+  margin-top: -125px;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  min-height: 120px;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+}
+
+.footer-hashtag {
+  margin-left: 15px;
+}
+
+.footer-social ul {
+  list-style: none;
+}
 
 .main-footer a {
   color: #000000;
@@ -599,6 +593,11 @@ a.more {
   text-align: center;
 }
 
+.search-options {
+  background: #4b769e url("../img/filter-background.jpg") no-repeat 50% 20%;
+  height: 217px;
+}
+
 .filter-form {
   display: flex;
   width: auto;
@@ -610,7 +609,7 @@ a.more {
   color: #ffffff;
   text-transform: uppercase;
 
-  background: url(../img/filter-background.jpg) no-repeat center -50px;
+  sbackground: url(../img/filter-background.jpg) no-repeat center -50px;
 }
 
 .price-controls {
@@ -765,6 +764,37 @@ a.more {
 .result {
   margin-bottom: 120px;
 }
+
+.arrows {
+  display: flex;
+}
+
+.icon-up, .icon-down {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.icon-up::before {
+  content: "\25b2";
+}
+
+.icon-down::before {
+  content: "\25bc";
+}
+
+.icon-active {
+  color: #81b3d2;
+}
+
+.up-arrow a:hover {
+  color: #81b3d2;
+  color: red;
+}
+
+.arrows a:focus {
+  color: #000000;
+}
+
+
 
 .hotel-item {
   display: flex;
