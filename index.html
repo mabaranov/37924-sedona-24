@@ -123,21 +123,55 @@
 
         <div class="modal-window">
          <form action="#" method="post">
+            <div class="checkin">
+              <label for="checkin">Дата заезда:</label>
+              <input type="text" name="checkin" id="checkin" placeholder="24 апреля 2017">
+              <div class="icon-calendar"></div>
+            </div>
 
-           <label for="checkin">Дата заезда:</label>
-           <input type="date" name="checkin" id="checkin" value="2016-04-24">
-           <div class="icon-calendar"></div>
+            <div class="checkout">
+              <label for="checkout">Дата выезда:</label>
+              <input type="text" name="checkout" id="checkout" placeholder="4 июля 2017">
+              <div class="icon-calendar"></div>
+            </div>
 
+            <div class="wrap-adult">
+              <label for="grown-ups">Взрослые:</label>
+              <div class="minus">
+                <div class="hline"></div>
+              </div>
+              <button class="form-left-minus">&#8211;</button>
+              <input type="text" name="grown-ups" min="1" id="grown-ups" placeholder="&#8211;2">
+              <div class="plus">
+                <div class="hline"></div>
+                <div class="vline"></div>
+              </div>
+              <div class="">&#43;</div>
+              <button class="form-left-plus">&#43;</button>
+<!--             </div>
 
-           <label for="checkout">Дата выезда:</label>
-           <input type="date" name="checkout" id="checkout" value="2016-08-04">
-           <div class="icon-calendar"></div>
+            <div class="wrap-child">
+ -->              <label for="children">Дети:</label>
+              <button class="form-right-minus">&#8211;</button>
+              <input type="text" name="children" id="children" placeholder="0">
+              <button class="form-right-plus">&#43;</button>
+            </div>
 
+ <!-- <div class="booking-form-people clearfix">
+           <div class="form-left">
+             <label for="adult">Взрослые:</label>
+             <button class="form-left-minus">&#8211;</button>
+             <input id="adult" type="text" placeholder="2">
+             <button class="form-left-plus">&#43;</button>
+           </div>
+           <div class="form-right">
+             <label for="child">Дети:</label>
+             <button class="form-right-minus">&#8211;</button>
+             <input id="child" type="text" placeholder="0">
+             <button class="form-right-plus">&#43;</button>
+           </div>
+</div> -->
 
-           <label for="grown-ups">Взрослые:</label>
-           <input type="number" name="grown-ups" min="1" id="grown-ups" value="2">
-           <label for="children">Дети:</label>
-           <input type="number" name="children" id="children" value="0">
 
 
            <input class="search-btn btn" type="submit" id="search-btn" name="search-btn" value="Найти">

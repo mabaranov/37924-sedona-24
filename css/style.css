@@ -188,7 +188,7 @@ a {
 }
 
 .block span {
-  display: block;    
+  display: block;
   margin-top: 24px;
   margin-bottom: 20px;
 }
@@ -274,7 +274,7 @@ a {
   font-weight: 400;
   color: #333333;
   padding-left: 10px;
-  padding-right: 10px;    
+  padding-right: 10px;
 }
 
 .search-hotels {
@@ -375,12 +375,13 @@ a {
 }
 
 .modal-window input[type="number"]:focus,
-.modal-window input[type="date"]:focus {
+.modal-window input[type="text"]:focus {
   background-color: #fff;
   border: solid 2px #e5e5e5;
 }
 
-.modal-window input[type="date"] {
+.checkin input,
+.checkout input {
   width: 312px;
   margin-bottom: 30px;
 }
@@ -396,6 +397,46 @@ a {
   padding-right: 25px;
 }
 
+.wrap-adult input,
+.wrap-child input {
+  width: 15px;
+  text-align: center;
+  spadding-right: 25px;
+}
+
+.minus {
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+.hline {
+  position: absolute;
+  top: 16px;
+  left: 13px;
+  width: 11px;
+  height: 3px;
+  content: "";
+  background-color: #666666;
+}
+
+.plus {
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  position: relative;
+}
+.vline {
+  position: absolute;
+  top: 12px;
+  left: 17px;
+  width: 3px;
+  height: 11px;
+  content: "";
+  background-color: #666666;
+}
+
 .modal-window label {
   display: inline-block;
   width: 110px;
@@ -406,7 +447,7 @@ a {
   height: 58px;
   background: #8dbad6;
   font-size: 21px;
-  line-height: 26px;    
+  line-height: 26px;
 }
 
 .modal-window input[type="submit"]:hover {
@@ -416,6 +457,22 @@ a {
 .modal-window input[type="submit"]:active {
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.icon-calendar {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  width: 21px;
+  height: 22px;
+  vertical-align: middle;
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  background-color: var(--very-light-pink-two);
+}
+
+.icon-calendar:active {
+  background-color: #81b3d2;
 }
 
 .main-footer {
@@ -494,6 +551,11 @@ a {
 .footer-copyright img {
   display: inline-block;
   vertical-align: middle;
+}
+
+.checkin,
+.checkout {
+  position: relative;
 }
 
 /*catalog.html*/
